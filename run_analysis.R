@@ -11,6 +11,17 @@ library(data.table)
 library(plyr)
 library(dplyr)
 
+# Load data from web and extract if not already
+if(!file.exists("./UCI HAR Dataset/")) {
+        fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+        download.file(fileUrl, "./dataPack.zip", method = "curl")
+        unzip("./dataPack.zip")
+}
+
+if(file.exists("./report.txt")) {
+        unlink("./report.txt")
+}
+
 # Preload meta tables
 activityMetaTable <- read.table("./UCI HAR Dataset/activity_labels.txt",sep = " ",
                                 col.names = c("activity_id","activity"))
