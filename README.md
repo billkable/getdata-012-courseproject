@@ -16,7 +16,7 @@ The following are assumed in your environment:
 	- dplyr
 
 ## How to Run the project
-afass
+Following are steps to run the analyzer:
 
 1. Checkout this directory, including:
 	
