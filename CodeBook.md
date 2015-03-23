@@ -3,10 +3,8 @@ The following describes data set for getdata-012 course project.
 
 See the accompanying README.md for instructions for setup and how to run the analysis tool.
 
-
-
-## Delimitation:   The output written by the analyser is a simple aggregate observation delimited by line, and variable of each observation delimited by space character " "
-
+## Delimitation
+The output written by the analyser is a simple aggregate observation delimited by line, and variable of each observation delimited by space character " "
 
 ## Mean Aggregate Output Data Set
 
